@@ -583,7 +583,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: var(--gutter-normal) 0;
 }
 
-.footer i {
+i {
   font-size: 3rem;
 }
 
@@ -602,21 +602,6 @@ body:not(.user-is-tabbing) a:focus {
 .footer__social-link-item:not(:last-of-type) {
     margin-right: var(--gutter-small);
 }
-/*
-.footer__social-image {
-    height: 4rem;
-}
-
-.footer__github-buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__github-buttons iframe {
-    height: 2.5rem;
-    width: 84px;
-    transform: translateY(3px);
-} */
 
 @media(max-width: 500px) {
     .footer {
