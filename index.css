@@ -220,7 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--blue);
     font-weight: 400;
 }
 
@@ -248,7 +248,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .btn--pink {
-    background: var(--pink);
+    /* background: var(--pink); */
     transition: all 0.2s;
 }
 
@@ -258,6 +258,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn--pink:hover,
 .btn--pink:focus {
+    color: var(--blue);
     background: transparent;
 }
 
@@ -338,7 +339,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: var(--gutter-normal) 0;
 }
 
@@ -369,6 +371,14 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.nav__logo {
+  display: inline;
+}
+
+.nav__logo-tag {
+  color: var(--blue);
+}
+
 .nav__link {
     position: relative;
     display: inline-block;
@@ -391,13 +401,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 2px;
-    background: var(--pink);
+    background: var(--blue);
 }
 
 /* --------------------------------------- */
