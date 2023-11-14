@@ -618,3 +618,10 @@ i {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+#particles-js {
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
