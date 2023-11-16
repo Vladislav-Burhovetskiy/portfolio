@@ -31,15 +31,18 @@
 
     <header class="header" role="banner" id="top">
       <div id="particles-js"></div>
-      <div class="row">
+      <div class="container header-nav">
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav__logo">
+          <p>
+            <span class="nav__logo-tag">&#60;</span>
+            vladidev
+            <span class="nav__logo-tag">&#62;</span>
+          </p>
+        </div>
         <nav class="nav" role="navigation">
-          <div class="nav__logo">
-            <p>
-              <span class="nav__logo-tag">&#60;</span>
-              vladidev
-              <span class="nav__logo-tag">&#62;</span>
-            </p>
-          </div>
           <ul class="nav__items">
             <li class="nav__item">
               <a href="#work" class="nav__link">Work</a>
@@ -57,13 +60,11 @@
           </ul>
         </nav>
       </div>
-      <div class="header__text-box row">
+      <div class="header__text-box container">
         <div class="header__text">
           <h1 class="heading-primary">
-            <!-- Replace the following name with your name -->
             <span>Vladislav Burhovetskiy</span>
           </h1>
-          <!-- Put a small paragraph about yourself -->
           <p>A Front-End Developer based in Ukraine</p>
           <a href="#contact" class="btn btn--pink">Get in touch</a>
         </div>
@@ -74,7 +75,7 @@
       <!-- ***** Work ***** -->
 
       <section class="work section" id="work">
-        <div class="row">
+        <div class="container">
           <h2>My Work</h2>
           <div class="work__boxes">
             <!-- Each div with the work__box class is a project. -->
@@ -200,7 +201,7 @@
       <!-- ***** Skills ***** -->
 
       <section class="client" id="skills">
-        <div class="row">
+        <div class="container">
           <h2>Clients</h2>
           <div class="client__logos">
             <img
@@ -240,7 +241,7 @@
       <!-- ***** Clients ***** -->
 
       <!-- <section class="client" id="clients">
-        <div class="row">
+        <div class="container">
           <h2>Clients</h2>
           <div class="client__logos">
             <img
@@ -280,7 +281,7 @@
       <!-- ***** About ***** -->
 
       <section class="about section" id="about">
-        <div class="row">
+        <div class="container">
           <h2>About Me</h2>
           <div class="about__content">
             <div class="about__text">
@@ -311,7 +312,7 @@
       <!-- ***** Contact ***** -->
 
       <section class="contact section" id="contact">
-        <div class="row">
+        <div class="container">
           <h2>Get in Touch</h2>
           <div class="contact__info">
             <p>
@@ -368,7 +369,7 @@
       />
     </a>
     <script src="./index.js" type="module"></script>
-    <script src="./particles_js/particles.js"></script>
-    <script src="./particles_js/app.js"></script>
+    <script src="./scripts/particles_js/particles.js"></script>
+    <script src="./scripts/particles_js/app.js"></script>
   </body>
 </html>
