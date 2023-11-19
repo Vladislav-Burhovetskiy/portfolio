@@ -35,7 +35,7 @@
   --line-height-small: 1.2;
 
   --black: #000;
-  --blue: #3f83f8;
+  --blue: rgb(64, 131, 247);
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
 
@@ -550,28 +550,45 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Skills ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.skill__logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 var(--gutter-normal);
+}
+.technologies {
+  margin-bottom: var(--gutter-medium);
+}
+
+.technologies i {
+  color: var(--blue);
+}
+
+.worked-with {
   filter: invert(100%) grayscale(100%) opacity(0.8);
 }
 
-.client__logo {
-  height: 6.5rem;
+.skill__logo {
+  height: 4rem;
   max-width: 18rem;
+  margin-bottom: var(--gutter-small-1);
+}
+
+.skill__logo:not(:last-of-type) {
+  margin-right: var(--gutter-small);
 }
 
 @media (max-width: 1240px) {
-  .client__logos {
-    overflow-x: scroll;
-    padding: var(--gutter-normal);
+  .worked-with {
+    /* overflow-x: scroll; */
+    padding: 0 var(--gutter-normal);
   }
 
-  .client__logo:not(:last-of-type) {
-    margin-right: var(--gutter-medium);
+  .skill__logo {
+    height: 3rem;
   }
 }
 
@@ -627,7 +644,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 i {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 .footer__link {
