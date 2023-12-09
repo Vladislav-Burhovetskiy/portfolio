@@ -1,5 +1,3 @@
-import "./scripts/menu";
-
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
