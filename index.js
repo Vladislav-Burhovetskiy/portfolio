@@ -1,3 +1,4 @@
+import "./scripts/menu.js";
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
