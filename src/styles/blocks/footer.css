@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+  padding: var(--gutter-medium) 0 var(--gutter-normal);
+  font-size: 2rem;
+  padding: var(--gutter-normal) 0;
+  margin: 0 auto;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer__link {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.footer__social-links {
+  display: flex;
+  justify-content: center;
+  padding: var(--gutter-normal) 0;
+  list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+  margin-right: var(--gutter-small);
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: var(--gutter-medium) 0;
+  }
+}

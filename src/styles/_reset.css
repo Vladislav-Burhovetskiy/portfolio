@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+body {
+  font-size: var(--font-size-small);
+  font-family: var(--font-stack);
+  font-weight: 400;
+  color: var(--white-1);
+  line-height: var(--line-height-normal);
+  background: var(--black);
+  overflow-x: hidden;
+}
+
+.section {
+  padding: var(--gutter-huge) 0;
+  border-bottom: var(--border-light);
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+i {
+  font-size: 3.2rem;
+}

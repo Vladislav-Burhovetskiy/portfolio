@@ -1,0 +1,131 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gutter-normal) 0;
+}
+
+.nav__items {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: var(--gutter-medium);
+}
+
+.nav__logo {
+  display: inline;
+}
+
+.nav__logo-tag {
+  color: var(--blue);
+}
+
+@media (max-width: 510px) {
+  .nav {
+    position: fixed;
+    justify-content: start;
+    align-items: start;
+    font-size: var(--font-size-medium);
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: -2px -2px 1px var(--blue);
+    border-radius: 8px 0;
+    color: var(--white-1);
+    top: 15rem;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 75%;
+
+    transform: translateX(102%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  .nav__logo p {
+    margin-top: var(--gutter-small-1);
+  }
+
+  .nav__items {
+    display: block;
+    list-style: none;
+    text-align: left;
+    font-size: var(--font-size-medium-1);
+    margin-left: var(--gutter-normal);
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: var(--gutter-medium);
+  }
+}
+
+.nav__link {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  display: inline-block;
+  height: 1rem;
+  background: var(--white);
+  transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.nav__link:hover {
+  color: var(--blue);
+}
+
+.nav__link:hover::after {
+  right: 0;
+  height: 2px;
+  background: var(--blue);
+}
+
+/* ----- Header ----- */
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("./src/images/header.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--font-size-normal);
+}
+
+.header__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__text p {
+  margin: 1.5rem 0 3.5rem;
+  max-width: var(--container-medium-width);
+  font-family: "Jost", sans-serif;
+  font-size: var(--font-size-medium);
+}
+
+@media (max-width: 510px) {
+  .header__text {
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+  }
+}

@@ -1,0 +1,159 @@
+.work__title-btn,
+.work__boxes-btn,
+.work__box {
+  display: flex;
+  align-items: center;
+}
+
+.work__title-btn,
+.work__boxes-btn {
+  justify-content: space-between;
+}
+
+.work__boxes-btn {
+  max-width: 755px;
+  flex: 1;
+}
+
+.boxes-btn {
+  padding: 10px 15px;
+  min-width: 180px;
+  flex: 1;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 4.5rem;
+}
+
+.boxes-btn:not(:first-child) {
+  margin-left: var(--gutter-normal);
+}
+
+@media (max-width: 900px) {
+  .work__title-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work__box {
+    align-items: initial;
+    flex-direction: column-reverse;
+  }
+
+  .work__boxes-btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .boxes-btn:not(:first-child) {
+    margin-left: var(--gutter-small);
+  }
+
+  .boxes-btn {
+    padding: 10px;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 615px) {
+  .boxes-btn:not(:first-child) {
+    margin-left: var(--gutter-x-small);
+  }
+}
+
+@media (max-width: 550px) {
+  .work__boxes-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .boxes-btn:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .boxes-btn {
+    min-width: 320px;
+    max-width: 400px;
+  }
+}
+
+.work__box:not(:last-child) {
+  margin-bottom: 15rem;
+}
+
+@media (max-width: 500px) {
+  .work__box:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  .boxes-btn {
+    flex-grow: 1;
+  }
+}
+
+.work__title {
+  margin-right: var(--gutter-normal);
+}
+
+.active {
+  color: var(--blue);
+  box-shadow: inset 5px 5px 10px -3px var(--blue);
+  /* padding: 20px; */
+}
+
+.work__links {
+  display: flex;
+  align-items: end;
+}
+
+.work__text {
+  flex: 0 0 30%;
+}
+
+.work__list {
+  list-style-position: inside;
+  margin-bottom: var(--gutter-normal);
+}
+
+.work__code {
+  font-size: 2.75rem;
+  height: 3rem;
+  margin-right: var(--gutter-normal);
+  padding: 0.6rem 0;
+  transition: all 0.3s;
+}
+
+.work__code-1 {
+  font-size: 2.75rem;
+  height: 3rem;
+  margin-left: var(--gutter-normal);
+  transition: all 0.3s;
+}
+
+.work__code:hover {
+  color: var(--blue);
+  transform: scale(1.2);
+}
+
+.work__code-text {
+  color: var(--blue);
+  font-size: 2.75rem;
+}
+
+.work__image-box {
+  margin-bottom: var(--gutter-normal);
+}
+
+@media (min-width: 901px) {
+  .work__image-box {
+    flex: 1;
+    margin: 0 0 0 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .work__code {
+    height: 4rem;
+  }
+}

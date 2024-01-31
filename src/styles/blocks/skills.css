@@ -1,0 +1,38 @@
+.skill__logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 var(--gutter-normal);
+}
+.technologies {
+  margin-bottom: var(--gutter-medium);
+}
+
+.technologies i {
+  color: var(--blue);
+}
+
+.worked-with {
+  filter: invert(100%) grayscale(100%) opacity(0.8);
+}
+
+.skill__logo {
+  height: 4rem;
+  max-width: 18rem;
+  margin-bottom: var(--gutter-small-1);
+}
+
+.skill__logo:not(:last-of-type) {
+  margin-right: var(--gutter-small);
+}
+
+@media (max-width: 1240px) {
+  .worked-with {
+    /* overflow-x: scroll; */
+    padding: 0 var(--gutter-normal);
+  }
+
+  .skill__logo {
+    height: 3rem;
+  }
+}

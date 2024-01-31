@@ -1,4 +1,4 @@
-import "./src/scripts/menu.js";
+import "./menu.js";
 /* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
