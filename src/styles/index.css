@@ -1,15 +1,16 @@
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
-@import "./_fonts.css";
-@import "./_vars.css";
-@import "./_reset.css";
+@import "./fonts.css";
+@import "./vars.css";
+@import "./reset.css";
+@import "./normalize.css";
 @import "./blocks/container.css";
 
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
-@import "./_typography.css";
+@import "./typography.css";
 
 /* --------------------------------------- */
 /* ----- Buttons and Links ----- */
