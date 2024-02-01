@@ -7,7 +7,11 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./src/images/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./src/images/favicon.png"
+    />
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -81,24 +85,28 @@
           <div class="work__title-btn">
             <h2 class="work__title">My Work</h2>
             <div class="work__boxes-btn">
-              <button class="boxes-btn btn btn--blue" data-category="html-css-js">
+              <button class="boxes-btn btn btn--blue" id="web-apps-btn">
                 Web app
                 <br />
-                <!-- HTML | CSS | JS | React -->
+                <span class="hidden">HTML·CSS·SCSS·JS</span>
               </button>
-              <button class="boxes-btn active btn btn--blue" data-category="js-react">
+              <button
+                class="boxes-btn active btn btn--blue"
+                id="app-projects-btn"
+              >
                 App projects
-                <br>
-                HTML·CSS·JS·React
+                <br />
+                <span>HTML·CSS·JS·React</span>
               </button>
-              <button class="boxes-btn btn btn--blue" data-category="feathers-games">
-                Feathers & Games
-                <br>
-                <!-- JavaScript | React -->
+              <button class="boxes-btn btn btn--blue" id="feathers-games-btn">
+                Feathers
+                <br />
+                <span class="hidden">JavaScript·React</span>
               </button>
             </div>
           </div>
-          <div class="work__boxes">
+          <!-- App projects -->
+          <div class="work__boxes" id="app-projects">
             <div class="work__box">
               <div class="work__text">
                 <h3>Personal Dashboard</h3>
@@ -263,6 +271,95 @@
               </div>
             </div>
 
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Filter & Sort JSON</h3>
+                <p>
+                  You can filter data by an Exclude or Include condition and
+                  select all or one option that is in the condition. And also
+                  sort JSON data in natural order.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>JSON</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/Vladislav-Burhovetskiy/json-filter-sort"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github work__code">
+                      <span class="work__code-text"> GitHub</span>
+                    </i>
+                  </a>
+                  <a
+                    href="https://vladislav-burhovetskiy.github.io/json-filter-sort/"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site<span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./src/images/json-project.png"
+                  class="work__image"
+                  alt="Project 5"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Web app -->
+          <div class="work__boxes hidden" id="web-apps">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Addme wep app</h3>
+                <p>
+                  This is a web app pet-project that can be added to the main
+                  screen of a mobile phone and used as a mobile application.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>Firebase</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/Vladislav-Burhovetskiy/addme-mobile-app"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github work__code">
+                      <span class="work__code-text"> GitHub</span>
+                    </i>
+                  </a>
+                  <a
+                    href="https://vladislav-burhovetskiy.github.io/addme-mobile-app/pages/profile.html"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site<span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./src/images/addme-project.png"
+                  class="work__image"
+                  alt="Project 2"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Game & Feather -->
+          <div class="work__boxes hidden" id="feathers-games">
             <div class="work__box">
               <div class="work__text">
                 <h3>Filter & Sort JSON</h3>
