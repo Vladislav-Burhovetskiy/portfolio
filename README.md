@@ -16,7 +16,7 @@ To View the live site click [DEMOLINK &rarr;](https://vladislav-burhovetskiy.git
 ### I continue to work on:
 
 - adding new projects ❤️
-- CV for download [&#8595;]()
+- CV for download [&#8595;](https://drive.google.com/file/d/14GM83YMe2PQ4xLVVcb56JRWI246VpKiq/view?usp=share_link)
 
 ## 
 ### Happy Coding!
