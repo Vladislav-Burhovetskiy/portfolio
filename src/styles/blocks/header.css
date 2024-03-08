@@ -34,7 +34,9 @@
     justify-content: start;
     align-items: start;
     font-size: var(--font-size-medium);
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(0.7px);
+
     box-shadow: -2px -2px 1px var(--blue);
     border-radius: 8px 0;
     color: var(--white-1);
